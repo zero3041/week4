@@ -1,0 +1,88 @@
+// /**
+//  * Copyright © Magento, Inc. All rights reserved.
+//  * See COPYING.txt for license details.
+//  */
+
+@color-training-1: #ccc;
+@color-training-2: #777;
+@color-training-3: #3b3b3b;
+
+@media (min-width: 769px) {
+    .page-layout-1column {
+        .product-info-main {
+            width: 55% !important;
+        }
+
+        .product.media {
+            width: 45% !important;
+        }
+    }
+}
+.columns {
+    .column.main {
+        .product-info-main {
+            .page-title-wrapper {
+                .page-title {
+                    border-bottom: 1px solid @color-training-1;
+                }
+            }
+            .product-info-price {
+                border-bottom: none;
+                display: table;
+                width: 100%;
+            }
+            .product-add-form {
+                clear: both;
+                display: flex;
+                justify-content: flex-end;
+                form {
+                    display: flex;
+                    width: 100%;
+                }
+            }
+            .box-tocart {
+                .fieldset {
+                    align-items: center;
+                    display: flex;
+                    gap: 10px;
+                    justify-content: flex-end;
+                    .field {
+                        align-items: center;
+                        display: flex;
+                        gap: 10px;
+                        .control {
+                            height: 46px;
+                            input {
+                                height: 52px;
+                            }
+                        }
+                    }
+                    .actions {
+                        .tocart {
+                            border: none;
+                            width: 150px;
+                        }
+                        .primary {
+                            background: @color-training-3;
+                        }
+                    }
+                }
+            }
+        }
+        .product.info {
+            .product {
+                .data.item {
+                    border-width: 1px 0 1px 0;
+                    .switch {
+                        background: @color-training-1;
+                    }
+                }
+                .data.item.active {
+                    .switch {
+                        background: @color-training-2;
+                    }
+                }
+            }
+        }
+    }
+}
