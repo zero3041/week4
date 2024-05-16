@@ -38,7 +38,7 @@ class Info implements HttpGetActionInterface
     public function __construct(
         Context $context,
         PageFactory $resultPageFactory,
-        RequestInterface $request
+        RequestInterface $request // Sửa đổi từ `RequestInterface` thành `Magento\Framework\App\RequestInterface`
     ) {
         $this->context = $context;
         $this->resultPageFactory = $resultPageFactory;
