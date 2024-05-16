@@ -1,0 +1,7 @@
+<?php $infoData = $block->getInfoData(); ?>
+<div>
+    <p>Name: <?= $escaper->escapeHtml($infoData['name']) ?></p>
+    <p>Date of Birth: <?= $escaper->escapeHtml($infoData['dob']) ?></p>
+    <p>Address: <?= $escaper->escapeHtml($infoData['address']) ?></p>
+    <p>Description: <?= $escaper->escapeHtml($infoData['description']) ?></p>
+</div>
